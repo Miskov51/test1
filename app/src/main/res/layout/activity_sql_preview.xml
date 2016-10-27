@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="Dostępne bazy biletów"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/listaPlikow"
+                android:fadeScrollbars="false"
+                android:focusable="true"
+                android:layout_height="200dp" />
+
+            <Button
+                android:text="Odśwież listę"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="listaTablic"
+                android:id="@+id/buttonRefreshCSVlist" />
+
+            <Button
+                android:text="przeglądnij bazę"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button15" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="tableBack"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>

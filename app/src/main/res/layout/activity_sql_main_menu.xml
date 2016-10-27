@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sql_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kmisiuk.qr_bileter.MainActivity">
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="sqlBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="84dp">
+
+        <Button
+            android:text="Załaduj bazę"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CSVmanipulator"
+            android:id="@+id/button6" />
+
+        <Button
+            android:text="Przeglądaj bazę"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sqlPreview"
+            android:id="@+id/button5" />
+
+        <Button
+            android:text="Zarządzaj bazami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4" />
+
+        <Button
+            android:text="test bazy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sqlManipulator"
+            android:id="@+id/button2" />
+
+    </LinearLayout>
+</RelativeLayout>
